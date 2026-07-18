@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk '{ if \\(length\\($0\\) > 200\\) printf \"%d\\\\t[LONG LINE: %d chars] %s...\\\\n\", NR, length\\($0\\), substr\\($0,1,120\\); else printf \"%d\\\\t%s\\\\n\", NR, $0 }' firestyle.html)",
+      "Bash(awk 'NR>=539 && NR<=694 { if \\(length\\($0\\) > 300\\) printf \"%d\\\\t[LONG %d chars] %s...\\\\n\", NR, length\\($0\\), substr\\($0,1,150\\); else printf \"%d\\\\t%s\\\\n\", NR, $0 }' firestyle.html)",
+      "Bash(awk 'NR>=306 && NR<=500 { if \\(length\\($0\\) > 300\\) printf \"%d\\\\t[LONG %d chars] %s...\\\\n\", NR, length\\($0\\), substr\\($0,1,100\\); else printf \"%d\\\\t%s\\\\n\", NR, $0 }' firestyle.html)",
+      "Bash(awk '{ if \\(length\\($0\\) > 300\\) printf \"%d\\\\t[LONG %d chars] %s...\\\\n\", NR, length\\($0\\), substr\\($0,1,100\\); else printf \"%d\\\\t%s\\\\n\", NR, $0 }' mixfire.html)",
+      "Bash(awk 'NR>=121 && NR<=232 { if \\(length\\($0\\) > 300\\) printf \"%d\\\\t[LONG %d chars] %s...\\\\n\", NR, length\\($0\\), substr\\($0,1,100\\); else printf \"%d\\\\t%s\\\\n\", NR, $0 }' mixfire.html)",
+      "Bash(awk 'NR>=333 && NR<=354 { if \\(length\\($0\\) > 300\\) printf \"%d\\\\t[LONG %d chars] %s ... TAIL: %s\\\\n\", NR, length\\($0\\), substr\\($0,1,80\\), substr\\($0,length\\($0\\)-120\\); else printf \"%d\\\\t%s\\\\n\", NR, $0 }' mixfire.html)",
+      "Bash(command -v python)",
+      "Bash(command -v python3)",
+      "Bash(command -v node)",
+      "Bash(command -v ffprobe)",
+      "Bash(/c/Python313/python -)",
+      "Bash(/c/Python313/python -m http.server 8741)",
+      "Bash(awk 'NR>=352 && NR<=440 { if \\(length\\($0\\) > 300\\) printf \"%d\\\\t[LONG %d chars] %s...\\\\n\", NR, length\\($0\\), substr\\($0,1,80\\); else printf \"%d\\\\t%s\\\\n\", NR, $0 }' firestyle.html)",
+      "Bash(/c/Python313/python -m http.server 8742)",
+      "Bash(/c/Python313/python -m http.server 8743)"
+    ]
+  }
+}
